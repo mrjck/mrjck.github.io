@@ -2,22 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/dfir/</loc>
+    <loc>https://hashkiller.github.io/categories/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/categories/dfir/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/posts/dfir/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/posts/dfir/wsl/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/posts/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/tags/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/tags/wsl/</loc>
+    <lastmod>2021-05-10T19:55:37+05:30</lastmod>
+  </url><url>
+    <loc>https://hashkiller.github.io/tags/disk-forensic/</loc>
     <lastmod>2021-05-10T19:15:18+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://hashkiller.github.io/posts/dfir/log2timeline/</loc>
     <lastmod>2021-05-10T19:15:18+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/posts/dfir/log2timeline/</loc>
-    <lastmod>2021-05-10T19:15:18+05:30</lastmod>
-  </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2021-05-10T19:15:18+05:30</lastmod>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
-  </url><url>
-    <loc>http://example.org/search/</loc>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://hashkiller.github.io/search/</loc>
   </url>
 </urlset>

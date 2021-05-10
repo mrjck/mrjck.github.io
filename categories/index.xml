@@ -2,9 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on h@$#ki11er</title>
-    <link>http://example.org/categories/</link>
+    <link>https://hashkiller.github.io/categories/</link>
     <description>Recent content in Categories on h@$#ki11er</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 May 2021 19:55:37 +0530</lastBuildDate><atom:link href="https://hashkiller.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DFIR</title>
+      <link>https://hashkiller.github.io/categories/dfir/</link>
+      <pubDate>Mon, 10 May 2021 19:55:37 +0530</pubDate>
+      
+      <guid>https://hashkiller.github.io/categories/dfir/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
