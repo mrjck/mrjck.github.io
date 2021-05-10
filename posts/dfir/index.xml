@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DFIR on h@$#ki11er</title>
+    <link>http://example.org/posts/dfir/</link>
+    <description>Recent content in DFIR on h@$#ki11er</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 May 2021 19:15:18 +0530</lastBuildDate><atom:link href="http://example.org/posts/dfir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Log2timeline using WSL</title>
+      <link>http://example.org/posts/dfir/log2timeline/</link>
+      <pubDate>Mon, 10 May 2021 19:15:18 +0530</pubDate>
+      
+      <guid>http://example.org/posts/dfir/log2timeline/</guid>
+      <description>How to install log2timeline in windows using WSL</description>
+    </item>
+    
+  </channel>
+</rss>
