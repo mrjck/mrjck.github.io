@@ -5,26 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Log2timeline using WSL | h@$#ki11er</title>
+<title>Log2timeline using WSL | Jitendra Sarkar</title>
 <meta name="keywords" content="wsl, disk forensic" />
 <meta name="description" content="Steps to install log2timeline in Windows using WSL. Helpfull in disk forensic and timeline analysis.">
-<meta name="author" content="">
-<link rel="canonical" href="https://hashkiller.github.io/posts/dfir/log2timeline/" />
+<meta name="author" content="Jitendra Sarkar">
+<link rel="canonical" href="https://js-sarkar.github.io/posts/dfir/log2timeline/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.2d6dbfc6e0f8a1db1c9d082a76dc11d094328cf63f247bbc2421dfaa7f2bb170.css" integrity="sha256-LW2/xuD4odscnQgqdtwR0JQyjPY/JHu8JCHfqn8rsXA=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://hashkiller.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://hashkiller.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://hashkiller.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://hashkiller.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://hashkiller.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://js-sarkar.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://js-sarkar.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://js-sarkar.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://js-sarkar.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://js-sarkar.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.83.1" />
 <meta property="og:title" content="Log2timeline using WSL" />
 <meta property="og:description" content="Steps to install log2timeline in Windows using WSL. Helpfull in disk forensic and timeline analysis." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hashkiller.github.io/posts/dfir/log2timeline/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://js-sarkar.github.io/posts/dfir/log2timeline/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-05-10T19:15:18&#43;05:30" />
 <meta property="article:modified_time" content="2021-05-10T19:15:18&#43;05:30" />
 
@@ -42,19 +42,19 @@
       "@type": "ListItem",
       "position":  2 ,
       "name": "Posts",
-      "item": "https://hashkiller.github.io/posts/"
+      "item": "https://js-sarkar.github.io/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "DFIR",
-      "item": "https://hashkiller.github.io/posts/dfir/"
+      "item": "https://js-sarkar.github.io/posts/dfir/"
     }, 
     {
       "@type": "ListItem",
       "position":  4 ,
       "name": "Log2timeline using WSL",
-      "item": "https://hashkiller.github.io/posts/dfir/log2timeline/"
+      "item": "https://js-sarkar.github.io/posts/dfir/log2timeline/"
     }
   ]
 }
@@ -74,16 +74,20 @@
   "inLanguage": "en",
   "datePublished": "2021-05-10T19:15:18+05:30",
   "dateModified": "2021-05-10T19:15:18+05:30",
+  "author":{
+    "@type": "Person",
+    "name": "Jitendra Sarkar"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://hashkiller.github.io/posts/dfir/log2timeline/"
+    "@id": "https://js-sarkar.github.io/posts/dfir/log2timeline/"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "h@$#ki11er",
+    "name": "Jitendra Sarkar",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://hashkiller.github.io/favicon.ico"
+      "url": "https://js-sarkar.github.io/favicon.ico"
     }
   }
 }
@@ -142,7 +146,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://hashkiller.github.io" accesskey="h" title="h@$#ki11er (Alt + H)">h@$#ki11er</a>
+            <a href="https://js-sarkar.github.io" accesskey="h" title="Jitendra Sarkar (Alt + H)">Jitendra Sarkar</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -168,17 +172,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://hashkiller.github.io/categories/" title="Categories">
+                <a href="https://js-sarkar.github.io/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://hashkiller.github.io/tags/" title="Tags">
+                <a href="https://js-sarkar.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://hashkiller.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://js-sarkar.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -189,13 +193,45 @@
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="https://js-sarkar.github.io">Home</a>&nbsp;»&nbsp;<a href="https://js-sarkar.github.io/posts/">Posts</a>&nbsp;»&nbsp;<a href="https://js-sarkar.github.io/posts/dfir/">DFIR</a></div>
     <h1 class="post-title">
       Log2timeline using WSL
     </h1>
-    <div class="post-meta">May 10, 2021
+    <div class="post-meta">May 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jitendra Sarkar
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#installation" aria-label="Installation">Installation</a><ul>
+                        
+                <li>
+                    <a href="#kali" aria-label="Kali">Kali</a></li>
+                <li>
+                    <a href="#ubuntu" aria-label="Ubuntu">Ubuntu</a></li>
+                <li>
+                    <a href="#docker" aria-label="Docker">Docker</a></li></ul>
+                </li>
+                <li>
+                    <a href="#converting-vhdx-file-to-raw-image" aria-label="Converting Vhdx File to Raw Image">Converting Vhdx File to Raw Image</a></li>
+                <li>
+                    <a href="#creating-plaso-dump-file" aria-label="Creating Plaso Dump file">Creating Plaso Dump file</a></li>
+                <li>
+                    <a href="#convert-plaso-file-into-csv" aria-label="Convert plaso file into CSV">Convert plaso file into CSV</a><ul>
+                        
+                <li>
+                    <a href="#reference" aria-label="Reference">Reference</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
   <div class="post-content"><h2 id="installation">Installation<a hidden class="anchor" aria-hidden="true" href="#installation">#</a></h2>
 <ul>
 <li>Kali</li>
@@ -242,19 +278,23 @@ sudo apt-get install plaso-tools
 </div>
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://hashkiller.github.io/tags/wsl/">wsl</a></li>
-      <li><a href="https://hashkiller.github.io/tags/disk-forensic/">disk forensic</a></li>
+      <li><a href="https://js-sarkar.github.io/tags/wsl/">wsl</a></li>
+      <li><a href="https://js-sarkar.github.io/tags/disk-forensic/">disk forensic</a></li>
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://js-sarkar.github.io/posts/dfir/wsl/">
+    <span class="title">« Prev Page</span>
+    <br>
+    <span>Installing Windows Subsystem for Linux (WSL 2)</span>
+  </a>
+</nav>
+
   </footer>
 </article>
     </main>
     <footer class="footer">
-    <span>&copy; 2021 <a href="https://hashkiller.github.io">h@$#ki11er</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+    <span>&copy; 2021 <a href="https://js-sarkar.github.io">Jitendra Sarkar</a></span>
+    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
     <button class="top-link" id="top-link" type="button" accesskey="g">
@@ -315,6 +355,53 @@ sudo apt-get install plaso-tools
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

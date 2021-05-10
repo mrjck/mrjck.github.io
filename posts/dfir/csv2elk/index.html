@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Installing Windows Subsystem for Linux (WSL 2) | Jitendra Sarkar</title>
-<meta name="keywords" content="wsl" />
-<meta name="description" content="Installation process of WSL2 in Windows.">
+<title>Import csv to elk | Jitendra Sarkar</title>
+<meta name="keywords" content="wsl, log analysis, elk, csv" />
+<meta name="description" content="Steps to import cvs log file to elk dashboard.">
 <meta name="author" content="Jitendra Sarkar">
-<link rel="canonical" href="https://js-sarkar.github.io/posts/dfir/wsl/" />
+<link rel="canonical" href="https://js-sarkar.github.io/posts/dfir/csv2elk/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.2d6dbfc6e0f8a1db1c9d082a76dc11d094328cf63f247bbc2421dfaa7f2bb170.css" integrity="sha256-LW2/xuD4odscnQgqdtwR0JQyjPY/JHu8JCHfqn8rsXA=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -21,16 +21,16 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.83.1" />
-<meta property="og:title" content="Installing Windows Subsystem for Linux (WSL 2)" />
-<meta property="og:description" content="Installation process of WSL2 in Windows." />
+<meta property="og:title" content="Import csv to elk" />
+<meta property="og:description" content="Steps to import cvs log file to elk dashboard." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://js-sarkar.github.io/posts/dfir/wsl/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-10T19:55:37&#43;05:30" />
-<meta property="article:modified_time" content="2021-05-10T19:55:37&#43;05:30" />
+<meta property="og:url" content="https://js-sarkar.github.io/posts/dfir/csv2elk/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-10T22:42:41&#43;05:30" />
+<meta property="article:modified_time" content="2021-05-10T22:42:41&#43;05:30" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Installing Windows Subsystem for Linux (WSL 2)"/>
-<meta name="twitter:description" content="Installation process of WSL2 in Windows."/>
+<meta name="twitter:title" content="Import csv to elk"/>
+<meta name="twitter:description" content="Steps to import cvs log file to elk dashboard."/>
 
 
 <script type="application/ld+json">
@@ -53,8 +53,8 @@
     {
       "@type": "ListItem",
       "position":  4 ,
-      "name": "Installing Windows Subsystem for Linux (WSL 2)",
-      "item": "https://js-sarkar.github.io/posts/dfir/wsl/"
+      "name": "Import csv to elk",
+      "item": "https://js-sarkar.github.io/posts/dfir/csv2elk/"
     }
   ]
 }
@@ -63,24 +63,24 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Installing Windows Subsystem for Linux (WSL 2)",
-  "name": "Installing Windows Subsystem for Linux (WSL 2)",
-  "description": "Installation process of WSL2 in Windows.",
+  "headline": "Import csv to elk",
+  "name": "Import csv to elk",
+  "description": "Steps to import cvs log file to elk dashboard.",
   "keywords": [
-    "wsl"
+    "wsl", "log analysis", "elk", "csv"
   ],
-  "articleBody": "Setting up kali in WSL2\nRequirement To install WSL 2 on Windows 10 you need the following things:\n Windows 10 May 2020 (2004), Windows 10 May 2019 (1903), or Windows 10 November 2019 (1909) or later A computer with Hyper-V Virtualization support  Step to Enable WSL 2 in Windows 10  Enable WSL 2 Enable ‘Virtual Machine Platform’ Set WSL 2 as default Install a Kali Linux  Step 1: Enable WSL Run Powershell As Administator\ndism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart Step 2. Enable ‘Virtual Machine Platform’ To enable Virtual Machine Platform on Windows 10 (2004) open PowerShell as Administrator and run:\ndism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart OR\nEnable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart Step 3. Set WSL 2 as default Setting default version 2 for WSL, before installing any Linux destro\nwsl --set-default-version 2 Step 4. Install a distro Install kali from Microsoft store\nhttps://www.microsoft.com/en-us/p/kali-linux/9pkr34tncv07?activetab=pivot:overviewtab\nConvert Kali on WSL 1 to WSL 2\nIf you already have kali as WSL 1 you can convert it to version 2 by following command\nwsl.exe --set-version Kali-Linux 2 Starting Kali For First Time Search for Kali is search tab.\nUpdate and upgrade kali after configuring the password.\nsudo apt-get update \u0026\u0026 upgrade Win-Kex If you want to have full kali desktop ewnvironment you can install Win-kex.\nWin-KeX provides a Kali Desktop Experience for Windows Subsystem for Linux (WSL 2)\nInstall Win-KeX\nsudo apt update \u0026\u0026 sudo apt install kali-win-kex ",
-  "wordCount" : "236",
+  "articleBody": "There are many situations when we want to analyze large size of logs. Considering the logs are in CSV format. There are many tools that make this task easy. Still, it’s frustrating us with the amount of time it takes to process the data.\nTo overcome this I took the help of ELK (Docker) in a windows machine using WSL.\nRequirement  Docker in Windows WSL 2 (Ubuntu/Kali)  Installation ELK docker installation\nsudo docker pull sebp/elk Starting docker\ndocker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it -e LOGSTASH_START=0 -v {CSV file location in host}:{Mounting location} --name Container_Name sebp/elk  -e LOGSTASH_START=0: Start ELK without logstash -v {CSV file location in host}:{Mounting location}:Mount host drive to docker  Starting Docker with bash terminal\nOpen new terminal and enter below command:\ndocker exec -it Container_name /bin/bash Then upload CSV Logs using command below:\n/opt/logstash/bin/logstash -f logstash.conf  logstash.conf Example\ninput { file { path = \"/home/user/log.csv\" start_position = \"beginning\" # sincedb_path = \"/dev/null\" } } filter { csv { separator = \",\" columns = [\"Sr\",\"Day\",\"Weekday\",\"District\",\"DistrictNumber\",\"Mem\",\"Abs\",\"AttendancePercent\",\"AbsentPercent\",\"County\" ] } } output { elasticsearch { hosts = \"http://localhost:9200\" index = \"elk_test\" } stdout {} } ",
+  "wordCount" : "187",
   "inLanguage": "en",
-  "datePublished": "2021-05-10T19:55:37+05:30",
-  "dateModified": "2021-05-10T19:55:37+05:30",
+  "datePublished": "2021-05-10T22:42:41+05:30",
+  "dateModified": "2021-05-10T22:42:41+05:30",
   "author":{
     "@type": "Person",
     "name": "Jitendra Sarkar"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://js-sarkar.github.io/posts/dfir/wsl/"
+    "@id": "https://js-sarkar.github.io/posts/dfir/csv2elk/"
   },
   "publisher": {
     "@type": "Organization",
@@ -195,99 +195,87 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://js-sarkar.github.io">Home</a>&nbsp;»&nbsp;<a href="https://js-sarkar.github.io/posts/">Posts</a>&nbsp;»&nbsp;<a href="https://js-sarkar.github.io/posts/dfir/">DFIR</a></div>
     <h1 class="post-title">
-      Installing Windows Subsystem for Linux (WSL 2)
+      Import csv to elk
     </h1>
-    <div class="post-meta">May 10, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jitendra Sarkar
+    <div class="post-meta">May 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jitendra Sarkar
 </div>
   </header> <div class="toc">
     <details >
         <summary accesskey="c" title="(Alt + C)">
             <div class="details">Table of Contents</div>
         </summary>
-        <div class="inner"><ul><ul>
+        <div class="inner"><ul>
                 <li>
-                    <a href="#requirement" aria-label="Requirement">Requirement</a></li>
+                    <a href="#requirement" aria-label="Requirement"><strong>Requirement</strong></a></li>
                 <li>
-                    <a href="#step-to-enable-wsl-2-in-windows-10" aria-label="Step to Enable WSL 2 in Windows 10">Step to Enable WSL 2 in Windows 10</a></li>
-                <li>
-                    <a href="#step-1-enable-wsl" aria-label="Step 1: Enable WSL">Step 1: Enable WSL</a></li>
-                <li>
-                    <a href="#step-2-enable-virtual-machine-platform" aria-label="Step 2. Enable ‘Virtual Machine Platform’">Step 2. Enable ‘Virtual Machine Platform’</a></li>
-                <li>
-                    <a href="#step-3-set-wsl-2-as-default" aria-label="Step 3. Set WSL 2 as default">Step 3. Set WSL 2 as default</a></li>
-                <li>
-                    <a href="#step-4-install-a-distro" aria-label="Step 4. Install a distro">Step 4. Install a distro</a></li></ul>
-                    
-                <li>
-                    <a href="#starting-kali-for-first-time" aria-label="Starting Kali For First Time">Starting Kali For First Time</a></li>
-                <li>
-                    <a href="#win-kex" aria-label="Win-Kex">Win-Kex</a>
+                    <a href="#installation" aria-label="Installation"><strong>Installation</strong></a>
                 </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><p>Setting up kali in WSL2</p>
-<h3 id="requirement">Requirement<a hidden class="anchor" aria-hidden="true" href="#requirement">#</a></h3>
-<p>To install WSL 2 on Windows 10 you need the following things:</p>
+  <div class="post-content"><p>There are many situations when we want to analyze large size of logs. Considering the logs are in CSV format. There are many tools that make this task easy. Still, it&rsquo;s frustrating us with the amount of time it takes to process the data.</p>
+<p>To overcome this I took the help of ELK (Docker) in a windows machine using WSL.</p>
+<h3 id="requirement"><strong>Requirement</strong><a hidden class="anchor" aria-hidden="true" href="#requirement">#</a></h3>
 <ul>
-<li>Windows 10 May 2020 (2004), Windows 10 May 2019 (1903), or Windows 10 November 2019 (1909) or later</li>
-<li>A computer with Hyper-V Virtualization support</li>
+<li>Docker in Windows</li>
+<li>WSL 2 (Ubuntu/Kali)</li>
 </ul>
-<h3 id="step-to-enable-wsl-2-in-windows-10">Step to Enable WSL 2 in Windows 10<a hidden class="anchor" aria-hidden="true" href="#step-to-enable-wsl-2-in-windows-10">#</a></h3>
-<ol>
-<li>Enable WSL 2</li>
-<li>Enable ‘Virtual Machine Platform’</li>
-<li>Set WSL 2 as default</li>
-<li>Install a Kali Linux</li>
-</ol>
-<h3 id="step-1-enable-wsl">Step 1: Enable WSL<a hidden class="anchor" aria-hidden="true" href="#step-1-enable-wsl">#</a></h3>
-<p>Run Powershell As Administator</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">dism.exe /online /enable-feature /featurename<span style="color:#960050;background-color:#1e0010">:</span>Microsoft-Windows-Subsystem-Linux /all /norestart
-</code></pre></div><h3 id="step-2-enable-virtual-machine-platform">Step 2. Enable ‘Virtual Machine Platform’<a hidden class="anchor" aria-hidden="true" href="#step-2-enable-virtual-machine-platform">#</a></h3>
-<p>To enable Virtual Machine Platform on Windows 10 (2004) open PowerShell as Administrator and run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">dism.exe /online /enable-feature /featurename<span style="color:#960050;background-color:#1e0010">:</span>VirtualMachinePlatform /all /norestart
-</code></pre></div><p><strong>OR</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
-</code></pre></div><h3 id="step-3-set-wsl-2-as-default">Step 3. Set WSL 2 as default<a hidden class="anchor" aria-hidden="true" href="#step-3-set-wsl-2-as-default">#</a></h3>
-<p>Setting default version 2 for WSL, before installing any Linux destro</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">wsl --set-default-version 2
-</code></pre></div><h3 id="step-4-install-a-distro">Step 4. Install a distro<a hidden class="anchor" aria-hidden="true" href="#step-4-install-a-distro">#</a></h3>
-<p>Install kali from Microsoft store</p>
-<p><a href="https://www.microsoft.com/en-us/p/kali-linux/9pkr34tncv07?activetab=pivot:overviewtab">https://www.microsoft.com/en-us/p/kali-linux/9pkr34tncv07?activetab=pivot:overviewtab</a></p>
-<p><strong>Convert Kali on WSL 1 to WSL 2</strong></p>
-<p>If you already have kali as WSL 1 you can convert it to version 2 by following command</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">wsl.exe --set-version Kali-Linux 2
-</code></pre></div><h2 id="starting-kali-for-first-time">Starting Kali For First Time<a hidden class="anchor" aria-hidden="true" href="#starting-kali-for-first-time">#</a></h2>
-<p>Search for Kali is search tab.</p>
-<p><img loading="lazy" src="/kali1.png" alt=""  title="Kali"  />
-</p>
-<p>Update and upgrade kali after configuring the password.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update <span style="color:#f92672">&amp;&amp;</span> upgrade
-</code></pre></div><h2 id="win-kex">Win-Kex<a hidden class="anchor" aria-hidden="true" href="#win-kex">#</a></h2>
-<p>If you want to have full kali desktop ewnvironment you can install <strong><code>Win-kex</code></strong>.</p>
-<p>Win-KeX provides a Kali Desktop Experience for Windows Subsystem for Linux (WSL 2)</p>
-<p><strong>Install Win-KeX</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install kali-win-kex
-</code></pre></div><p><img loading="lazy" src="/win-kex.png" alt=""  title="WinKex Login"  />
-</p>
+<h3 id="installation"><strong>Installation</strong><a hidden class="anchor" aria-hidden="true" href="#installation">#</a></h3>
+<p><strong>ELK docker installation</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo docker pull sebp/elk
+</code></pre></div><p><strong>Starting docker</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it -e LOGSTASH_START<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> -v <span style="color:#f92672">{</span>CSV file location in host<span style="color:#f92672">}</span>:<span style="color:#f92672">{</span>Mounting location<span style="color:#f92672">}</span> --name Container_Name sebp/elk
+</code></pre></div><ul>
+<li><code>-e LOGSTASH_START=0:</code> Start ELK without logstash</li>
+<li><code>-v {CSV file location in host}:{Mounting location}:</code>Mount host drive to docker</li>
+</ul>
+<p><strong>Starting Docker with bash terminal</strong></p>
+<p>Open new terminal and enter below command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker exec -it Container_name /bin/bash
+</code></pre></div><p>Then upload CSV Logs using command below:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/opt/logstash/bin/logstash -f logstash.conf
+</code></pre></div><hr>
+<p>logstash.conf Example</p>
+<pre><code class="language-conf" data-lang="conf">input {
+    file {
+        path =&gt; &quot;/home/user/log.csv&quot;
+        start_position =&gt; &quot;beginning&quot;
+       # sincedb_path =&gt; &quot;/dev/null&quot;
+    }
+}
 
+filter {
+    csv {
+        separator =&gt; &quot;,&quot;
+        columns =&gt;
+        [&quot;Sr&quot;,&quot;Day&quot;,&quot;Weekday&quot;,&quot;District&quot;,&quot;DistrictNumber&quot;,&quot;Mem&quot;,&quot;Abs&quot;,&quot;AttendancePercent&quot;,&quot;AbsentPercent&quot;,&quot;County&quot;
+        ]
+    }
+}
+
+output {
+    elasticsearch {
+        hosts =&gt; &quot;http://localhost:9200&quot;
+        index =&gt; &quot;elk_test&quot;
+    }
+    stdout {}
+}
+</code></pre>
 </div>
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://js-sarkar.github.io/tags/wsl/">wsl</a></li>
+      <li><a href="https://js-sarkar.github.io/tags/log-analysis/">log analysis</a></li>
+      <li><a href="https://js-sarkar.github.io/tags/elk/">elk</a></li>
+      <li><a href="https://js-sarkar.github.io/tags/csv/">csv</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://js-sarkar.github.io/posts/dfir/csv2elk/">
-    <span class="title">« Prev Page</span>
-    <br>
-    <span>Import csv to elk</span>
-  </a>
-  <a class="next" href="https://js-sarkar.github.io/posts/dfir/log2timeline/">
+  <a class="next" href="https://js-sarkar.github.io/posts/dfir/wsl/">
     <span class="title">Next Page »</span>
     <br>
-    <span>Log2timeline using WSL</span>
+    <span>Installing Windows Subsystem for Linux (WSL 2)</span>
   </a>
 </nav>
 
