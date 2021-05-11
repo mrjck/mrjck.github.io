@@ -9,19 +9,19 @@
     <lastBuildDate>Mon, 10 May 2021 19:55:37 +0530</lastBuildDate><atom:link href="https://js-sarkar.github.io/categories/dfir/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Windows Subsystem for Linux (WSL 2)</title>
-      <link>https://js-sarkar.github.io/posts/dfir/wsl/</link>
+      <link>https://js-sarkar.github.io/posts/2021/wsl/</link>
       <pubDate>Mon, 10 May 2021 19:55:37 +0530</pubDate>
       
-      <guid>https://js-sarkar.github.io/posts/dfir/wsl/</guid>
+      <guid>https://js-sarkar.github.io/posts/2021/wsl/</guid>
       <description>Installation process of WSL2 in Windows.</description>
     </item>
     
     <item>
       <title>Log2timeline using WSL</title>
-      <link>https://js-sarkar.github.io/posts/dfir/log2timeline/</link>
+      <link>https://js-sarkar.github.io/posts/2021/log2timeline/</link>
       <pubDate>Mon, 10 May 2021 19:15:18 +0530</pubDate>
       
-      <guid>https://js-sarkar.github.io/posts/dfir/log2timeline/</guid>
+      <guid>https://js-sarkar.github.io/posts/2021/log2timeline/</guid>
       <description>Steps to install log2timeline in Windows using WSL. Helpfull in disk forensic and timeline analysis.</description>
     </item>
     
