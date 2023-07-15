@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MyConfigs on MrJcK</title>
+    <link>https://mrjck.github.io/myconfig/</link>
+    <description>Recent content in MyConfigs on MrJcK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jul 2023 17:41:10 +0300</lastBuildDate><atom:link href="https://mrjck.github.io/myconfig/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Terminal Configuration</title>
+      <link>https://mrjck.github.io/myconfig/windows-terminal-theme/</link>
+      <pubDate>Sat, 15 Jul 2023 17:41:10 +0300</pubDate>
+      
+      <guid>https://mrjck.github.io/myconfig/windows-terminal-theme/</guid>
+      <description>{ &amp;#34;$help&amp;#34;: &amp;#34;https://aka.ms/terminal-documentation&amp;#34;, &amp;#34;$schema&amp;#34;: &amp;#34;https://aka.ms/terminal-profiles-schema&amp;#34;, &amp;#34;actions&amp;#34;: [ { &amp;#34;command&amp;#34;: { &amp;#34;action&amp;#34;: &amp;#34;copy&amp;#34;, &amp;#34;singleLine&amp;#34;: false }, &amp;#34;keys&amp;#34;: &amp;#34;ctrl+c&amp;#34; }, { &amp;#34;command&amp;#34;: &amp;#34;paste&amp;#34;, &amp;#34;keys&amp;#34;: &amp;#34;ctrl+v&amp;#34; }, { &amp;#34;command&amp;#34;: { &amp;#34;action&amp;#34;: &amp;#34;splitPane&amp;#34;, &amp;#34;split&amp;#34;: &amp;#34;right&amp;#34; }, &amp;#34;keys&amp;#34;: &amp;#34;ctrl+alt+right&amp;#34; }, { &amp;#34;command&amp;#34;: &amp;#34;find&amp;#34;, &amp;#34;keys&amp;#34;: &amp;#34;ctrl+shift+f&amp;#34; }, { &amp;#34;command&amp;#34;: &amp;#34;unbound&amp;#34;, &amp;#34;keys&amp;#34;: &amp;#34;alt+shift+plus&amp;#34; }, { &amp;#34;command&amp;#34;: &amp;#34;unbound&amp;#34;, &amp;#34;keys&amp;#34;: &amp;#34;alt+shift+minus&amp;#34; }, { &amp;#34;command&amp;#34;: &amp;#34;unbound&amp;#34;, &amp;#34;keys&amp;#34;: &amp;#34;shift+z&amp;#34; }, { &amp;#34;command&amp;#34;: &amp;#34;unbound&amp;#34;, &amp;#34;keys&amp;#34;: &amp;#34;alt+z&amp;#34; }, { &amp;#34;command&amp;#34;: { &amp;#34;action&amp;#34;: &amp;#34;splitPane&amp;#34;, &amp;#34;split&amp;#34;: &amp;#34;auto&amp;#34;, &amp;#34;splitMode&amp;#34;: &amp;#34;duplicate&amp;#34; }, &amp;#34;keys&amp;#34;: &amp;#34;alt+shift+d&amp;#34; }, { &amp;#34;command&amp;#34;: { &amp;#34;action&amp;#34;: &amp;#34;splitPane&amp;#34;, &amp;#34;split&amp;#34;: &amp;#34;down&amp;#34; }, &amp;#34;keys&amp;#34;: &amp;#34;ctrl+alt+down&amp;#34; }, { &amp;#34;command&amp;#34;: &amp;#34;togglePaneZoom&amp;#34;, &amp;#34;keys&amp;#34;: &amp;#34;ctrl+alt+up&amp;#34; } ], &amp;#34;copyFormatting&amp;#34;: &amp;#34;none&amp;#34;, &amp;#34;copyOnSelect&amp;#34;: false, &amp;#34;defaultProfile&amp;#34;: &amp;#34;{46ca431a-3a87-5fb3-83cd-11ececc031d2}&amp;#34;, &amp;#34;profiles&amp;#34;: { &amp;#34;defaults&amp;#34;: { &amp;#34;font&amp;#34;: { &amp;#34;face&amp;#34;: &amp;#34;JetBrainsMonoMedium Nerd Font&amp;#34; } }, &amp;#34;list&amp;#34;: [ { &amp;#34;colorScheme&amp;#34;: &amp;#34;One Half Dark&amp;#34;, &amp;#34;commandline&amp;#34;: &amp;#34;%SystemRoot%\\System32\\WindowsPowerShell\\v1.</description>
+    </item>
+    
+  </channel>
+</rss>

