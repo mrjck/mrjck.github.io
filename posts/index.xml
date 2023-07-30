@@ -6,7 +6,18 @@
     <description>Recent content in Posts on MrJcK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 18:56:21 +0300</lastBuildDate><atom:link href="https://mrjck.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 21:15:43 +0300</lastBuildDate><atom:link href="https://mrjck.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Privilege Escalation</title>
+      <link>https://mrjck.github.io/posts/windows/windows-privilege-escalation/</link>
+      <pubDate>Sun, 30 Jul 2023 21:15:43 +0300</pubDate>
+      
+      <guid>https://mrjck.github.io/posts/windows/windows-privilege-escalation/</guid>
+      <description>Gathering Stored Credentials We can look for credentials in the system itself and if the found creds have higher integrity we can use it as for privilege escalation and lateral movement.
+Searching Password In Stored Files Find Password in File findstr /s /i /n &amp;#34;Search String&amp;#34; *.txt Password can be found in following extension
+install, backup, .bak, .log, .bat, .cmd, .vbs, .cnf, .conf, .config, .ini, .xml, .txt, .gpg, .pgp, .p12, .</description>
+    </item>
+    
     <item>
       <title>OSCP | Tool usage</title>
       <link>https://mrjck.github.io/posts/oscp-tool-usage/</link>
@@ -43,6 +54,15 @@ docker run -t -i --entrypoint=/bin/bash -v /data&amp;lt;File Location of Host Ma
       <description>There are many situations when we want to analyze large size of logs. Considering the logs are in CSV format. There are many tools that make this task easy. Still, it’s frustrating us with the amount of time it takes to process the data.
 To overcome this I took the help of ELK (Docker) in a windows machine using WSL.
 Requirement Docker in Windows WSL 2 (Ubuntu/Kali) Installation ELK docker installation</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mrjck.github.io/posts/create-website-using-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrjck.github.io/posts/create-website-using-hugo/</guid>
+      <description>This is the blog how I use Hugo t</description>
     </item>
     
   </channel>

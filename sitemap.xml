@@ -3,12 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mrjck.github.io/</loc>
-    <lastmod>2023-07-15T18:56:21+03:00</lastmod>
-  </url><url>
-    <loc>https://mrjck.github.io/posts/oscp-tool-usage/</loc>
-    <lastmod>2023-07-15T18:56:21+03:00</lastmod>
+    <lastmod>2023-07-30T21:15:43+03:00</lastmod>
   </url><url>
     <loc>https://mrjck.github.io/posts/</loc>
+    <lastmod>2023-07-30T21:15:43+03:00</lastmod>
+  </url><url>
+    <loc>https://mrjck.github.io/posts/windows/windows-privilege-escalation/</loc>
+    <lastmod>2023-07-30T21:15:43+03:00</lastmod>
+  </url><url>
+    <loc>https://mrjck.github.io/posts/oscp-tool-usage/</loc>
     <lastmod>2023-07-15T18:56:21+03:00</lastmod>
   </url><url>
     <loc>https://mrjck.github.io/myconfig/</loc>
@@ -22,6 +25,8 @@
   </url><url>
     <loc>https://mrjck.github.io/posts/analysing-csv-file-using-elk/</loc>
     <lastmod>2023-07-15T13:05:49+03:00</lastmod>
+  </url><url>
+    <loc>https://mrjck.github.io/posts/create-website-using-hugo/</loc>
   </url><url>
     <loc>https://mrjck.github.io/categories/</loc>
   </url><url>
