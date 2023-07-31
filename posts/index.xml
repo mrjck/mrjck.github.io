@@ -56,14 +56,5 @@ To overcome this I took the help of ELK (Docker) in a windows machine using WSL.
 Requirement Docker in Windows WSL 2 (Ubuntu/Kali) Installation ELK docker installation</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://mrjck.github.io/posts/create-website-using-hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrjck.github.io/posts/create-website-using-hugo/</guid>
-      <description>This is the blog how I use Hugo t</description>
-    </item>
-    
   </channel>
 </rss>
